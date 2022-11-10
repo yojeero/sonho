@@ -1,4 +1,4 @@
-## Vupy is a online radio player. ##
+## [Vupy](https://yooluxe.github.io/vupy/) is a online radio player. ##
 
 Vupy is a online radio player website based by Vue.JS
 
