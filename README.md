@@ -1,4 +1,4 @@
-<img src="preview/view.jpg" width="820" height="546">
+<img src="preview/view.jpg">
 
 ### [Vupy](https://vupy.vercel.app/)  is a online radio player. ###
 
