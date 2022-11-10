@@ -1,8 +1,6 @@
-### [Vupy](https://vupy.vercel.app/)  is a online radio player. ###
-
-Vupy is a online radio player website based by Vue.js
-
 <img src="preview/view.jpg" width="820" height="546">
+
+### [Vupy](https://vupy.vercel.app/)  is a online radio player. ###
 
 ```
 Features
