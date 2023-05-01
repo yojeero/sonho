@@ -1,22 +1,19 @@
-
-/*   reset.css  */
-
-html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}*,::after,::before{box-sizing:inherit}blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{font-size:100%;font-weight:400;margin:0;padding:0;vertical-align:baseline;border:0;outline:0}ul{list-style:none}button,input,select,textarea{margin:0}audio,embed,iframe,img,object,video{height:auto;max-width:100%;border:0;vertical-align:middle}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}a{text-decoration:none;color:#1e87f0;cursor:pointer;border:none;background:transparent}a:active,a:focus,a:hover{outline-width:0;color:#000;color:#0f6ecd}
+/* css reset | yojeero */
+*,::after,::before{box-sizing:border-box}*{margin:0}body,html{height:100%}body{line-height:1.5;min-height:100vh}canvas,img,picture,svg,video{display:block;max-width:100%}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}button,input,select,textarea{font:inherit}ol[role=list],ul[role=list]{list-style:none}
 
 /* main  */
 
-    body, html { height: 100% }
-
     body
 {
-    font: 500 1rem/1.3 'Raleway','Segoe UI','Helvetica Neue';
+    font-family: Raleway, system-ui;
+    font-size: 1rem;
+    font-weight: 500;     
 
     transition: all .5s ease-in-out;
     letter-spacing: 1px;
 
     color: #46586b;
-    background-color: #fafafa;
-    background: url(../img/bg.webp) bottom no-repeat;
+    background: url(../img/bg.webp)  bottom no-repeat,  #fafafa;
     background-size: cover
 }
 
@@ -141,15 +138,9 @@ html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-f
 }
 
     .fav svg:hover,
-    .fav-link svg:hover
-{
-    color: #2ecc71
-}
+    .fav-link svg:hover { color: #2ecc71 }
 
-    .fav.active
-{
-    color: #2ecc71
-}
+    .fav.active { color: #2ecc71 }
 
 	.main
 {
@@ -324,10 +315,7 @@ html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-f
     align-items: center
 }
 
-	.pn-icon
-{
-    outline: none
-}
+	.pn-icon { outline: none }
 
 	.pn-icon svg
 {
@@ -404,10 +392,7 @@ html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-f
     box-shadow: -2px -2px 5px #fff, 2px 2px 5px #c0c0c0;
 }
 
-.xl-icon svg:hover
-{
-    color: #fff;
-}
+.xl-icon svg:hover { color: #fff }
 
 	.scale-out-enter-active {transition: all .35s ease-in-out }
     .scale-out-leave-active {transition: all .35s ease-in-out }
@@ -440,6 +425,7 @@ html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-f
 	.bottom-label
 {
     font-size: .8rem;
+    font-weight: 300; 
 
     display: flex;
 
@@ -516,15 +502,11 @@ html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-f
 
 {
 
-    .player
-{
-    background-image: none
-} 
+    .player { background-image: none } 
 
-    .player-controls
-{
-    margin: 0
-}
+    .player-controls { margin: 0 }
+    
+    .bottom-color { display: none }
 
 }
 
