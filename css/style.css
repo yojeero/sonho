@@ -506,7 +506,7 @@
 
     .player-controls { margin: 0 }
     
-    .top-color, .bottom-color { display: none }
+    .bottom-color { display: none }
 
 }
 
