@@ -504,10 +504,8 @@
 
     .player { background-image: none } 
 
-    .player-controls { margin: 0 }
-    
-    .bottom-color { display: none }
-
+    .player-controls { margin: 0 }    
+   
 }
 
 /*  Responsive mobile screen max 840px   */
