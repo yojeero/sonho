@@ -18,7 +18,7 @@ new Vue({
         {
           name: "Antenne Bayern",
           artist: "Chill Out",
-          cover: "img/1.jpg",
+          cover: "img/1.webp",
           source: "http://mp3channels.webradio.antenne.de:80/chillout",
           url: "https://www.youtube.com/",
           favorited: true
@@ -26,7 +26,7 @@ new Vue({
         {
           name: "Maretimo Lounge",
           artist: "Maretimo Dj",
-          cover: "img/2.jpg",
+          cover: "img/2.webp",
           source: "https://s35.derstream.net/lounge.mp3",
           url: "https://www.youtube.com/",
           favorited: false
@@ -34,7 +34,7 @@ new Vue({
         {
           name: "CITY23",
           artist: "Lounge Radio",
-          cover: "img/3.jpg",
+          cover: "img/3.webp",
           source: "https://live.stream.maxfive.com/max5-city23?aggregator=liveradio",
           url: "https://www.youtube.com/",
           favorited: false
@@ -42,7 +42,7 @@ new Vue({
         {
           name: "ON Chillout",
           artist: "Chillout Radio",
-          cover: "img/4.jpg",
+          cover: "img/4.webp",
           source: "https://0n-chillout.radionetz.de/0n-chillout.mp3",
           url: "https://www.youtube.com/",
           favorited: false
