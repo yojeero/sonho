@@ -1,6 +1,6 @@
-<img src="preview/pic.jpg">
+<img src="preview/view.jpg">
 
-### [Vupy](https://vupy.vercel.app/)  is a online radio player. ###
+### [Sonho](https://sohno.vercel.app/)  is a online radio player. ###
 
 ```
 Features
