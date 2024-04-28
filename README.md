@@ -1,6 +1,6 @@
 <img src="preview/view.jpg">
 
-### [Sonho](https://sohno.vercel.app/)  is a online radio player. ###
+### [Sono](https://sonore.vercel.app/)  is a online radio player. ###
 
 ```
 Features
