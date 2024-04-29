@@ -1,10 +1,7 @@
-<img src="preview/view.jpg">
 
-### [Sono](https://sonore.vercel.app/)  is a online radio player. ###
+Yonoe is a online radio player.
 
-```
 Features
-```
 
 - Light color theme
 - 4 online radio stations presents
@@ -16,3 +13,5 @@ Features
 - Google Fonts
 - jQuery, VueJS
 - Animations
+
+-- All images and icons are for demonstration purposes only --
