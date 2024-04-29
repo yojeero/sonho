@@ -1,4 +1,4 @@
-<img src="preview/view.png">
+<img src="preview/preview.png">
 
 ### [Yonoe](https://yonoe.vercel.app/) is a online radio player. ###
 
