@@ -1,6 +1,6 @@
 <img src="preview/preview.png">
 
-### [Yonoe](https://yonoe.vercel.app/) is a online radio player. ###
+### [Onky](https://onky.vercel.app/) is a online radio player. ###
 
 ```
 Features
