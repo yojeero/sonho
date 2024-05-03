@@ -16,10 +16,10 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "Antenne Bayern",
-          artist: "Chill Out",
+          name: "CITY23",
+          artist: "Lounge Radio",
           cover: "img/1.webp",
-          source: "http://mp3channels.webradio.antenne.de:80/chillout",
+          source: "https://live.stream.maxfive.com/max5-city23?aggregator=liveradio",
           url: "https://www.youtube.com/",
           favorited: true
         },
@@ -32,12 +32,12 @@ new Vue({
           favorited: false
         },
         {
-          name: "CITY23",
-          artist: "Lounge Radio",
+          name: "Antenne Bayern",
+          artist: "Chill Out",
           cover: "img/3.webp",
-          source: "https://live.stream.maxfive.com/max5-city23?aggregator=liveradio",
+          source: "http://mp3channels.webradio.antenne.de:80/chillout",
           url: "https://www.youtube.com/",
-          favorited: false
+          favorited: false          
         },
         {
           name: "ON Chillout",
