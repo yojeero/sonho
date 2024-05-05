@@ -563,6 +563,7 @@ body
 
 }
 
+
 /*  Responsive desktop screen min 2000px   */
 
 @media ( min-width: 125rem )
@@ -574,10 +575,37 @@ body
 	height : 824px;  
 }
 
+.top-label
+{
+	font-size : .8125rem;
+}
+
 .cover-img
 {    
     width : 12.5rem;
 	height : 12.5rem;  
+}
+
+.album-track
+{
+	font-size : 1rem;
+}
+
+.album-name
+{
+	font-size : .8125rem;
+}
+
+.xl-icon
+{
+	width : 4.375rem;
+	height : 4.375rem;	
+}
+
+.xl-icon svg
+{
+	width : 2.5rem;
+	height : 2.5rem;
 }
 
 }
