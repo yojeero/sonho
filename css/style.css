@@ -261,7 +261,7 @@ body
 
 .album-track
 {
-	font-size : .875rem;
+	font-size : .875em;
 	font-variant : small-caps ;
 
 	margin : 0;
@@ -269,7 +269,7 @@ body
 
 .album-name
 {
-	font-size : .6875rem;
+	font-size : .6875em;
 
 	margin-top : 5px;
 
