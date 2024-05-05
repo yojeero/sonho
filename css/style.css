@@ -38,9 +38,6 @@ body
 	display : flex;
 	flex-direction : column;
 	
-	width : 16%;
-	height : 65%; 
-	
 	width : 20.625rem;
 	height : 42.5rem;  
 
@@ -564,5 +561,18 @@ body
 	border-radius : 0;
 	box-shadow : none;
 }
+
+}
+
+/*  Responsive desktop screen min 1921px   */
+
+@media ( min-width: 120.0625rem )
+{
+
+	body
+	{
+		font-size : 2rem;
+		line-height : 1.5;	
+	}
 
 }
