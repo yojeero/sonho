@@ -568,10 +568,16 @@ body
 @media ( min-width: 125rem )
 {
 
-	.player
-	{
-		width : 400px;
-		height : 824px;  
-	}
+.player
+{
+	width : 400px;
+	height : 824px;  
+}
+
+.cover-img
+{    
+    width : 12.5rem;
+	height : 12.5rem;  
+}
 
 }
