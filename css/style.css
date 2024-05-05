@@ -564,15 +564,15 @@ body
 
 }
 
-/*  Responsive desktop screen min 1921px   */
+/*  Responsive desktop screen min 2000px   */
 
-@media ( min-width: 120.0625rem )
+@media ( min-width: 125rem )
 {
 
-	body
+	.player
 	{
-		font-size : 2rem;
-		line-height : 1.5;	
+		width : 400px;
+		height : 824px;  
 	}
 
 }
