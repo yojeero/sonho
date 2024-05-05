@@ -16,35 +16,35 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "CITY23",
-          artist: "Lounge Radio",
+          name: "city23",
+          artist: "nu-disco & chillout",
           cover: "img/1.webp",
           source: "https://live.stream.maxfive.com/max5-city23?aggregator=liveradio",
-          url: "https://www.youtube.com/",
+          url: "https://www.city23.at/",
           favorited: true
         },
         {
-          name: "Maretimo Lounge",
-          artist: "Maretimo Dj",
+          name: "maretimo lounge",
+          artist: "maretimo dj",
           cover: "img/2.webp",
           source: "https://s35.derstream.net/lounge.mp3",
-          url: "https://www.youtube.com/",
+          url: "https://www.maretimo-records.com/",
           favorited: false
         },
         {
-          name: "Antenne Bayern",
-          artist: "Chill Out",
+          name: "antenne bayern",
+          artist: "chillout live",
           cover: "img/3.webp",
           source: "http://mp3channels.webradio.antenne.de:80/chillout",
-          url: "https://www.youtube.com/",
+          url: "https://www.antenne.de/webradio/live",
           favorited: false          
         },
         {
-          name: "ON Chillout",
-          artist: "Chillout Radio",
+          name: "on chillout",
+          artist: "chillout radio",
           cover: "img/4.webp",
           source: "https://0n-chillout.radionetz.de/0n-chillout.mp3",
-          url: "https://www.youtube.com/",
+          url: "https://chillout.onradio.de/",
           favorited: false
         }
       ],

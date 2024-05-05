@@ -14,7 +14,6 @@ body
 	transition : color 1s;
 
 	letter-spacing : 1px;
-	background-color: #2ecc71;
 }
 
 .container
@@ -30,9 +29,6 @@ body
 	
 	background: url(../img/bg.png) no-repeat bottom center, #ecf0f3;
     background-size: 400px auto, 100%; 
-
-	/* background : url(../img/paint.svg) no-repeat center, #ecf0f3;
-	background-size : 900px auto, 100%; */
 }
 
 .player
@@ -42,11 +38,14 @@ body
 	display : flex;
 	flex-direction : column;
 	
-	width : 20.625rem;
-	height : 42.5rem; 
+	width : 16%;
+	height : 65%; 
+	
+	/* min-width : 330px;
+	min-height : 680px;  */
 
-	/* width : 20.625rem;
-	height : 42.5rem;  */
+	min-width : 20.625rem;
+	min-height : 42.5rem;  
 
 	margin : 0;
 	padding : 0;
@@ -98,7 +97,7 @@ body
 
 	margin : auto;
 
-	color : #a8d0ee;
+	color : #bfced4;
 }
 
 .speaker
@@ -144,7 +143,7 @@ body
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #a8d0ee;
+	color : #bfced4;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -154,12 +153,12 @@ body
 .fav svg:hover ,
 .fav-link svg:hover
 {
-	color : #91c3e9;
+	color : #51a7cf;
 }
 
 .fav.active
 {
-	color : #91c3e9;
+	color : #79bbda;
 }
 
 .top-label
@@ -175,7 +174,7 @@ body
 	letter-spacing : 2px;
 	text-transform : uppercase;
 	
-	color : #75b4e5;
+	color : #8ac4df;
 }
 
 .main
@@ -203,7 +202,7 @@ body
 
 	text-align : center;
 
-	color : #75b4e5;
+	color : #8ec3dc;
 }
 
 .cover-img
@@ -264,20 +263,25 @@ body
 	text-align : center;
 	pointer-events : none;
 
-	color : #75b4e5;    
+	color : #79bbda;
 }
 
 .album-track
 {
-	font-size : .8125rem;
+	font-size : .875rem;
+	font-variant : small-caps ;
+
 	margin : 0;
 }
 
 .album-name
 {
 	font-size : .6875rem;
-	color : #94c5eb;
+
 	margin-top : 5px;
+
+	color : #0099b8;
+	text-shadow: #fff 0 1px 0;
 }
 
 .progress_bar
@@ -309,7 +313,7 @@ body
 	width : 0;
 	height : inherit;
 
-	background: #c2def3;
+	background: #cee4f5;
 	box-shadow : none;
 }
 
@@ -343,7 +347,7 @@ body
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #b0d4ef;
+	color : #79bbda;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -357,7 +361,7 @@ body
 
 	padding : .5rem;
 
-	color: #61a9e0;   
+	color: #51a7cf;   
 
 	border-radius : 50%;
 
@@ -383,7 +387,7 @@ body
 	border-radius : 50%;
 	outline : none;
 
-	background: #61a9e0;
+	background: #79bbda;
 	box-shadow : -2px -2px 5px #fff, 2px 2px 5px #c0c0c0;
 }
 
@@ -416,7 +420,7 @@ body
 
 .xl-icon svg:hover
 {
-	color : #61a9e0;
+	color : #51a7cf;
 }
 
 .scale-out-enter-active { transition : all .35s ease-in-out; }
@@ -464,7 +468,7 @@ body
 	user-select : none;
 	pointer-events : none;
 
-	color : #91c3e9;
+	color : #8ec3dc;
 }
 
 .bottom-label span
