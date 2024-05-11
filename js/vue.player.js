@@ -16,35 +16,43 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "city23",
-          artist: "nu-disco & chillout",
+          name: "CITY23",
+          artist: "Premium-Pop | Nu-Disco | Chill Out",
           cover: "img/1.webp",
-          source: "https://live.stream.maxfive.com/max5-city23?aggregator=liveradio",
+          source: "https://live.stream.maxfive.com/max5-city23/stream/mp3",
           url: "https://www.city23.at/",
           favorited: true
-        },
+        },  
         {
-          name: "maretimo lounge",
-          artist: "maretimo dj",
+          name: "CHILLOUT ANTENNE",
+          artist: "Antenne Bayern",
           cover: "img/2.webp",
-          source: "https://s35.derstream.net/lounge.mp3",
-          url: "https://www.maretimo-records.com/",
-          favorited: false
-        },
-        {
-          name: "antenne bayern",
-          artist: "chillout live",
-          cover: "img/3.webp",
-          source: "http://mp3channels.webradio.antenne.de:80/chillout",
-          url: "https://www.antenne.de/webradio/live",
+          source: "http://stream.antenne.de/chillout/stream/mp3",
+          url: "https://www.antenne.de/webradio/",
           favorited: false          
         },
         {
-          name: "on chillout",
-          artist: "chillout radio",
+          name: "MARETIMO",
+          artist: " Lounge Radio",
+          cover: "img/3.webp",
+          source: "https://s35.derstream.net/lounge.mp3",
+          url: "https://www.maretimo-records.com/en",
+          favorited: false
+        },      
+        {
+          name: "ANTENNE MAINZ",
+          artist: "Best Hits",
           cover: "img/4.webp",
-          source: "https://0n-chillout.radionetz.de/0n-chillout.mp3",
-          url: "https://chillout.onradio.de/",
+          source: "http://addrad.io/44556v5",
+          url: "https://www.antenne-mainz.de",
+          favorited: false
+        },
+        {
+          name: "ANTENNE BAYERN",
+          artist: "Pop",
+          cover: "img/5.webp",
+          source: "http://stream.antenne.de/pop-xxl/stream/mp3",
+          url: "https://www.antenne.de/webradio/",
           favorited: false
         }
       ],

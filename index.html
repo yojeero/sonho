@@ -20,7 +20,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
 
 		<!-- style CSS -->
    <link href="css/style.css" rel="stylesheet" />    		    
@@ -58,7 +59,7 @@
 
   <div class="main">      
 
-   <div class="top-label">LiveStream</div>
+   <div class="top-label"><span>&#9969;</span> livetime</div>
 
    <div class="time-radio">{{ currentTime }}</div>   
 
@@ -73,8 +74,8 @@
 	<div class="progress" ref="progress">
 
 	  <div class="album-info" v-if="currentTrack">            
-	    <div class="album-track">{{ currentTrack.name }}</div>
-	    <div class="album-name">{{ currentTrack.artist }}</div>
+	    <div class="name">{{ currentTrack.name }}</div>
+	    <div class="artist">{{ currentTrack.artist }}</div>
 	  </div>    	
 
 	  <div class="progress_bar" @click="clickProgress">
@@ -106,7 +107,7 @@
 
 		<div class="bottom-color">
 			
-			<div class="bottom-label">&#8674; Fancy <span>&#9835;</span>Music &#8672;</div> 
+			<div class="bottom-label">Fancy &copy; Music</div> 
 
 		</div> 		
 
