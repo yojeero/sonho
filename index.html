@@ -20,8 +20,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
 
 		<!-- style CSS -->
    <link href="css/style.css" rel="stylesheet" />    		    
@@ -39,29 +40,29 @@
 
 		<div class="player">
 
-      	<div class="top-color">
-      		
-      		<div class="top-icon">
+		<div class="top-color">
+		
+			<div class="code"><a :href="`https://github.com/yojeero/`" target="_blank">
+				<svg><use xlink:href="img/icon.svg#icon-code"></use></svg></a>
+			</div>
+		
+			<div class="speaker"></div>
+		
+			<div class="sound"><a :href="currentTrack.url" target="_blank">
+					<svg><use xlink:href="img/icon.svg#icon-sound"></use></svg></a>
+			</div>		
+		
+		</div>
 
-      			<div class="fav" :class="{ active : currentTrack.favorited }" @click="favorite">
-      				<svg><use xlink:href="img/icon.svg#icon-fav"></use></svg>
-      			</div>   
+  <div class="main">   
 
-      			<div class="speaker"></div>
+		<div class="top-clock">
 
-      		<div class="fav-link"><a :href="currentTrack.url" target="_blank">
-              <svg><use xlink:href="img/icon.svg#icon-link"></use></svg></a>
-            </div>        			
-            
-      		</div>      		
-      		
-      	</div>  
+			<div id="date"></div>
+			<div id="time"></div>
+			<div id="day"></div>			
 
-  <div class="main">      
-
-   <div class="top-label"><span>&#9969;</span> livetime</div>
-
-   <div class="time-radio">{{ currentTime }}</div>   
+		</div>
 
 	  <div class="cover-img" id="spinner"> 
 
@@ -103,11 +104,23 @@
 	 
 	</div>
 
-</div> <!-- end main content -->
+</div> <!-- end main content --> 
 
 		<div class="bottom-color">
 			
-			<div class="bottom-label">Fancy &copy; Music</div> 
+			<div class="bottom-label">live
+
+				<div class="time">
+		
+					<div class="time-label">
+						<svg><use xlink:href="img/icon.svg#icon-time"></use></svg>
+					</div>
+		
+					<div class="time-radio">{{ currentTime }}</div>
+		
+				</div> time
+			
+			</div> 
 
 		</div> 		
 
@@ -119,6 +132,42 @@
     <script src="js/jquery.min.js"></script>  
     <script src="js/vue.min.js"></script>
     <script src="js/vue.player.js"></script>  
+
+    <!-- clock	 -->
+    <script>
+
+	let updateClock = () => {
+  	let currentDate = new Date();
+
+	let daysOfWeek = [
+		"Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday"
+	];
+	let currentDay = daysOfWeek[currentDate.getDay()];
+
+	let formattedDate = `${currentDate.getDate()}-${String(
+		currentDate.getMonth() + 1
+	).padStart(2, "0")}-${currentDate.getFullYear()}`;
+	let currentHours = String(currentDate.getHours()).padStart(2, "0");
+	let currentMinutes = String(currentDate.getMinutes()).padStart(2, "0");
+
+	let currentTime = `${currentHours}:${currentMinutes}`;
+
+	document.getElementById("date").textContent = `${formattedDate}`;
+	document.getElementById("time").textContent = `${currentTime}`;
+	document.getElementById("day").textContent = `${currentDay}`;
+	};
+
+	// Update the clock every second (1 seconds)
+	setInterval(updateClock, 1000);
+	updateClock();
+
+	</script>  	
 
   		 <!-- Loader -->       
     <script>setTimeout(function(){$('.loader').css('display', 'none'); }, 300);</script>  
