@@ -13,6 +13,9 @@ body
 	transition : all .5s ease-in-out;
 	transition : color 1s;
 	letter-spacing : 1px;
+
+	background-color: #f2f5f8;
+	/* background-color: #f1f1f1; */
 }
 
 .container
@@ -28,10 +31,8 @@ body
 
 	background : 
 	url(../img/tree.png) no-repeat right bottom,
-	url(../img/orange.svg) no-repeat left 22vw top -20vh,
-	/* url(../img/orange.svg) no-repeat left 40% top -4vh, */
-	#f1f1f1;
-	background-size : 40%, 30%, 100%;
+	url(../img/flock.svg) no-repeat left 12vw top 6em;
+	background-size : 40%, 14%;
 }
 
 .player
@@ -53,16 +54,18 @@ body
 
 	transition : all .5s ease-in-out;
 
-	border : 1px solid #fff;
+	border : 1px solid #f4f6f9;
 	border-radius : 40px;
 
-	background : #f1f1f1;
-	box-shadow : 6px 6px 16px #d9d9d9;
+	background : #f2f5f8;
+	/* background : #f1f1f1; */
+	box-shadow : -6px -6px 22px #fff, 6px 6px 24px #cdd7e2;
 }
 
 .player:hover
 {
-	box-shadow : -3px -3px 7px #fff, 3px 3px 5px #d0d0d0;
+	box-shadow : -3px -3px 7px #fff, 3px 3px 9px #cdd7e2;
+	/* box-shadow : -3px -3px 7px #fff, 3px 3px 5px #d0d0d0; */
 }
 
 .top-color
@@ -80,7 +83,8 @@ body
 	border-top-left-radius : 40px;
 	border-top-right-radius : 40px;
 
-	background : #f4f4f4;
+	background : #f4f6f9;
+	/* background : #f4f4f4; */
 }
 
 .code a ,
@@ -160,7 +164,7 @@ body
 .top-clock
 {
 	font-family : 'Tulpen One', cursive;
-	line-height : 1.3;
+	line-height : 1.5;
 
 	display : flex;
 	align-items : center;
@@ -175,14 +179,12 @@ body
 #date
 {
 	font-size : 1rem;
-
 	letter-spacing : .3rem;
 }
 
 #time
 {
 	font-size : 2.25rem;
-
 	letter-spacing : .2rem;
 
 	color : #79cada;
@@ -191,7 +193,6 @@ body
 #day
 {
 	font-size : 1.25rem;
-
 	letter-spacing : .4rem;
 	text-transform : uppercase;
 }
@@ -271,7 +272,8 @@ body
 {
 	font-size : .875rem;
 
-	color : #737c7b;
+	color : #bfbc8a;
+	/* color : #737c7b; */
 	text-shadow : #fff 0 1px 0;
 }
 
@@ -292,7 +294,8 @@ body
 	user-select : none;
 	pointer-events : none;
 
-	background : #f1f1f1;
+	background : #f2f5f8;
+	/* background : #f1f1f1; */
 	box-shadow : inset 1px 1px 0 #cecece, 1px 1px 0 #fff;
 }
 
@@ -322,14 +325,24 @@ body
 
 .pn-icon
 {
+	display : flex;
+	align-items : center;
+	justify-content : center;
+
+	width : 3.25rem;
+	height : 3.25rem;
+
+	margin : 0;
+	padding : 0;
+
+	cursor : pointer;
+
 	outline : none;
 }
 
 .pn-icon svg
 {
-	display : flex;
-	align-items : center;
-	justify-content : center;
+	display : flex; 
 
 	width : 1.375rem;
 	height : 1.375rem;
@@ -355,8 +368,8 @@ body
 
 	border-radius : 50%;
 
-	background : #f3f3f3;
-	box-shadow : inset -3px -3px 7px #fff, inset 3px 3px 5px #cbcbcb;
+	background : #f4f6f9;
+	box-shadow : inset -3px -3px 7px #fff, inset 2px 2px 6px #cdd7e2;
 }
 
 .xl-icon
@@ -368,7 +381,7 @@ body
 	width : 4rem;
 	height : 4rem;
 
-	margin : 0 1.375rem;
+	margin : 0 .75rem;
 	padding : 0;
 
 	cursor : pointer;
@@ -376,15 +389,15 @@ body
 	border-radius : 50%;
 	outline : none;
 
-	background : #f1f1f1;
-	box-shadow : -2px -2px 5px #fff, 2px 2px 5px #cbcbcb;
+	background : #41b3cb;
+	/* background : #f2f5f8; */
+	/* background : #f1f1f1; */
+	box-shadow : -2px -2px 5px #fff, 2px 2px 5px #809dbb;
 }
 
 .xl-icon svg
 {
 	display : flex;
-	align-items : center;
-	justify-content : center;
 
 	width : 2rem;
 	height : 2rem;
@@ -392,7 +405,8 @@ body
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #41b3cb;
+	color : #f1f1f1;
+	/* color : #41b3cb; */
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -401,8 +415,8 @@ body
 
 .xl-icon:hover
 {	
-	background : #f1f1f1;
-	box-shadow : inset -3px -3px 7px #fff, inset 3px 3px 5px #cbcbcb;
+	background : #f4f6f9;
+	box-shadow : inset -3px -3px 7px #fff, inset 3px 3px 5px #cdd7e2; 
 }
 
 .xl-icon svg:hover
@@ -411,6 +425,7 @@ body
 	height : 1.75rem;
 
 	color : #737c7b;
+	
 }
 
 .scale-out-enter-active { transition : all .35s ease-in-out; }
@@ -435,7 +450,8 @@ body
 
 	border-bottom-right-radius : 40px;
 	border-bottom-left-radius : 40px;
-	background : #f4f4f4;
+	background : #f4f6f9;
+	/* background : #f4f4f4; */
 }
 
 .bottom-label
@@ -504,7 +520,7 @@ body
 
 	margin : auto;
 
-	background : #f1f1f1;
+	background : #f2f5f8;
 }
 
 .loader svg
