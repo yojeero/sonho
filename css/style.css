@@ -375,8 +375,8 @@ body
 	border-radius : 50%;
 	outline : none;
 
-	background : #41b3cb;
-	/* background : #f1f1f1; */
+	/* background : #41b3cb; */
+	background : #f1f1f1;
 	box-shadow : -2px -2px 5px #fff, 2px 2px 5px #d0d0d0;
 }
 
@@ -390,8 +390,8 @@ body
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #f1f1f1;
-	/* color : #41b3cb; */
+	/* color : #f1f1f1; */
+	color : #41b3cb;
 
 	fill : currentColor;
 	stroke : currentColor;

@@ -133,14 +133,20 @@
     <script src="js/jquery.min.js"></script>  
     <script src="js/vue.min.js"></script>
     <script src="js/vue.player.js"></script>  
-    <script src="js/script.js"></script>  
 
   		 <!-- Loader hide via jQuery -->  
-	<script>$(document).ready(function() {$('.loader').fadeOut(2000); });</script>	
+	<script>$(document).ready(function() {$('.loader').fadeOut(1000); });</script>	
 
      	<!-- SVG icons -->
 	<script src="js/svg4everybody.min.js"></script>
-	<script>svg4everybody();</script>  
+	<script>svg4everybody();</script>
+	
+	<!-- clock -->
+	<script>
+
+		let updateClock=()=>{let t=new Date,e=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],a=e[t.getDay()],d=String(t.getHours()).padStart(2,"0"),n=String(t.getMinutes()).padStart(2,"0"),u=`${d}:${n}`;document.getElementById("time").textContent=`${u}`,document.getElementById("day").textContent=`${a}`};setInterval(updateClock,1e3),updateClock();
+
+	</script>  
 	
 </body>
 </html>
