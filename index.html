@@ -31,9 +31,11 @@
 
 <body>
 
-		<!-- loader svg -->
-	<div class="loader"><svg><use xlink:href="#round"></use></svg></div>	
-
+		<!-- loader -->
+	<div class="loader">
+		<svg viewBox="-3 -4 39 39"> <polygon fill="#f1f1f1" stroke="#000" stroke-width="1"  points="16,0 32,32 0,32"></polygon></svg>
+	</div>
+	
 	<!-- player -->      
 
 	<div class="container" id="app">			
@@ -46,21 +48,20 @@
 				<svg><use xlink:href="img/icon.svg#icon-code"></use></svg></a>
 			</div>
 		
-			<div class="speaker"></div>
-		
+			<div class="speaker"></div>		
+
 			<div class="sound"><a :href="currentTrack.url" target="_blank">
-					<svg><use xlink:href="img/icon.svg#icon-sound"></use></svg></a>
+				<svg><use xlink:href="img/icon.svg#icon-sound"></use></svg></a>
 			</div>		
 		
 		</div>
 
   <div class="main">   
 
-		<div class="top-clock">
-
-			<div id="date"></div>
+		<div class="top-clock">			
+			
 			<div id="time"></div>
-			<div id="day"></div>			
+			<div id="day"></div>
 
 		</div>
 
@@ -132,59 +133,14 @@
     <script src="js/jquery.min.js"></script>  
     <script src="js/vue.min.js"></script>
     <script src="js/vue.player.js"></script>  
+    <script src="js/script.js"></script>  
 
-    <!-- clock	 -->
-    <script>
-
-	let updateClock = () => {
-  	let currentDate = new Date();
-
-	let daysOfWeek = [
-		"Sunday",
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thursday",
-		"Friday",
-		"Saturday"
-	];
-	let currentDay = daysOfWeek[currentDate.getDay()];
-
-	let formattedDate = `${currentDate.getDate()}-${String(
-		currentDate.getMonth() + 1
-	).padStart(2, "0")}-${currentDate.getFullYear()}`;
-	let currentHours = String(currentDate.getHours()).padStart(2, "0");
-	let currentMinutes = String(currentDate.getMinutes()).padStart(2, "0");
-
-	let currentTime = `${currentHours}:${currentMinutes}`;
-
-	document.getElementById("date").textContent = `${formattedDate}`;
-	document.getElementById("time").textContent = `${currentTime}`;
-	document.getElementById("day").textContent = `${currentDay}`;
-	};
-
-	// Update the clock every second (1 seconds)
-	setInterval(updateClock, 1000);
-	updateClock();
-
-	</script>  	
-
-  		 <!-- Loader -->       
-    <script>setTimeout(function(){$('.loader').css('display', 'none'); }, 300);</script>  
+  		 <!-- Loader hide via jQuery -->  
+	<script>$(document).ready(function() {$('.loader').fadeOut(2000); });</script>	
 
      	<!-- SVG icons -->
 	<script src="js/svg4everybody.min.js"></script>
-	<script>svg4everybody();</script>
-
-  		<!-- Loader cube -->
-  		<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">						
-  			<symbol id="round" viewBox="0 0 100 100">
-  				<path fill="currentColor" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite" /></path>
-  				<path fill="currentColor" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7 c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="-360 50 50" repeatCount="indefinite" /></path>
-  				<path fill="currentColor" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5 L82,35.7z"><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite" /></path>
-  			</symbol>
-
-  		</svg>
-
+	<script>svg4everybody();</script>  
+	
 </body>
 </html>
