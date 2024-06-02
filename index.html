@@ -33,7 +33,7 @@
 
 		<!-- loader -->
 	<div class="loader">
-		<svg viewBox="-3 -4 39 39"> <polygon fill="#f1f1f1" stroke="#000" stroke-width="1"  points="16,0 32,32 0,32"></polygon></svg>
+		<svg viewBox="-3 -4 39 39"><polygon fill="#f1f1f1" stroke="#000" stroke-width="1"  points="16,0 32,32 0,32"></polygon></svg>
 	</div>
 	
 	<!-- player -->      
@@ -47,13 +47,11 @@
 			<div class="code"><a :href="`https://github.com/yojeero/`" target="_blank">
 				<svg><use xlink:href="img/icon.svg#icon-code"></use></svg></a>
 			</div>
-		
-			<div class="speaker"></div>		
+	      
+			   <div class="speaker"></div>	 
 
-			<div class="sound"><a :href="currentTrack.url" target="_blank">
-				<svg><use xlink:href="img/icon.svg#icon-sound"></use></svg></a>
-			</div>		
-		
+			<div class="point"><a :href="currentTrack.url" target="_blank"></a></div>
+
 		</div>
 
   <div class="main">   
@@ -119,7 +117,7 @@
 		
 					<div class="time-radio">{{ currentTime }}</div>
 		
-				</div> time
+				</div>time
 			
 			</div> 
 
@@ -143,9 +141,7 @@
 	
 	<!-- clock -->
 	<script>
-
 		let updateClock=()=>{let t=new Date,e=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],a=e[t.getDay()],d=String(t.getHours()).padStart(2,"0"),n=String(t.getMinutes()).padStart(2,"0"),u=`${d}:${n}`;document.getElementById("time").textContent=`${u}`,document.getElementById("day").textContent=`${a}`};setInterval(updateClock,1e3),updateClock();
-
 	</script>  
 	
 </body>
